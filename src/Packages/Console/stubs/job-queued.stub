@@ -1,0 +1,36 @@
+<?php
+
+namespace {{namespace}};
+
+use Volcano\Bus\QueueableTrait;
+use Volcano\Foundation\Bus\DispatchableTrait;
+use Volcano\Queue\ShouldQueueInterface;
+use Volcano\Queue\SerializesModelsTrait;
+use Volcano\Queue\InteractsWithQueueTrait;
+
+
+class {{className}} implements ShouldQueueInterface
+{
+    use DispatchableTrait, InteractsWithQueueTrait, QueueableTrait, SerializesModelsTrait;
+
+
+    /**
+     * Create a new job instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Execute the job.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        //
+    }
+}

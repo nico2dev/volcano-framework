@@ -1,0 +1,35 @@
+<?php
+
+use Volcano\Database\Schema\Blueprint;
+use Volcano\Database\Migrations\Migration;
+
+
+class {{className}} extends Migration
+{
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('{{tableName}}', function (Blueprint $table)
+        {
+            //
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('{{tableName}}', function (Blueprint $table)
+        {
+            //
+        });
+    }
+}

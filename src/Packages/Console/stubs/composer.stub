@@ -1,0 +1,25 @@
+{
+    "name": "{{lower_package}}",
+    "type": "volcano-package",
+    "description": "{{name}} is a package for Volcano Framework",
+    "license": "{{license}}",
+    "authors": [
+        {
+            "name": "{{author}}",
+            "email": "{{email}}",
+            "homepage": "{{homepage}}",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2.1",
+        "volcano/framework": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{json_namespace}}\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

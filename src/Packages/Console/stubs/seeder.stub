@@ -1,0 +1,23 @@
+<?php
+
+namespace {{namespace}}\Database\Seeds;
+
+use Volcano\Database\ORM\Model;
+use Volcano\Database\Seeder;
+
+
+class DatabaseSeeder extends Seeder
+{
+
+    /**
+     * Run the Database Seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Model::unguard();
+
+        // $this->call('{{namespace}}\Database\Seeds\FoobarTableSeeder');
+    }
+}
